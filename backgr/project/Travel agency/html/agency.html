@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="../css/agency.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-wrap">
+            <div class="brand"><span>Globe</span>Trails</div>
+            <nav>
+                <ul>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">Dream. Explore. Discover.</span>
+            <h1>Unforgettable Getaways for Every Traveler</h1>
+            <p>From coastal retreats and mountain adventures to city escapes, we design journeys that feel magical.</p>
+            <a href="#packages" class="btn btn-primary">View Packages</a>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <div class="highlight-card">
+            <h3>Expert Guides</h3>
+            <p>Local experts and hand-picked experiences in every destination.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Trusted Support</h3>
+            <p>24/7 travel assistance from planning through your entire trip.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Flexible Itineraries</h3>
+            <p>Customized packages tailored to your style and pace.</p>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <div class="section-heading">
+            <span>Travel Experiences</span>
+            <h2>Popular Packages</h2>
+        </div>
+        <div class="package-grid">
+            <article class="package-card">
+                <img src="../images/foto1.jpg" alt="Beach Escape">
+                <div class="package-details">
+                    <h3>Beach Escape</h3>
+                    <p>Soak up the sun with luxury stays, seaside dining, and water adventures for 7 days.</p>
+                    <a href="#booking" class="btn btn-secondary">Book Beach</a>
+                </div>
+            </article>
+            <article class="package-card">
+                <img src="../images/foto2.jpeg" alt="Mountain Trek">
+                <div class="package-details">
+                    <h3>Mountain Trek</h3>
+                    <p>Explore scenic trails, alpine villages, and crisp mountain air across 10 days.</p>
+                    <a href="#booking" class="btn btn-secondary">Book Mountain</a>
+                </div>
+            </article>
+            <article class="package-card">
+                <img src="../images/foto3.jpeg" alt="City Tour">
+                <div class="package-details">
+                    <h3>City Tour</h3>
+                    <p>Discover iconic landmarks, culture, and nightlife on an immersive 5-day city break.</p>
+                    <a href="#booking" class="btn btn-secondary">Book City</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="section-heading light">
+            <span>See the Journey</span>
+            <h2>Destination Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+            <img src="../images/foto4.jpeg" alt="Destination 1">
+            <img src="../images/foto5.jpeg" alt="Destination 2">
+            <img src="../images/foto6.jpeg" alt="Destination 3">
+            <img src="../images/foto7.jpg" alt="Destination 4">
+            <img src="../images/foto9.jpeg" alt="Destination 5">
+            <img src="../images/foto10.jpeg" alt="Destination 6">
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="booking-card">
+            <div class="booking-text">
+                <span>Ready to go?</span>
+                <h2>Book Your Dream Trip</h2>
+                <p>Share your details and our travel planners will create a personalized itinerary.</p>
+            </div>
+            <form action="#" class="booking-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <select name="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="beach">Beach Escape</option>
+                    <option value="mountain">Mountain Trek</option>
+                    <option value="city">City Tour</option>
+                </select>
+                <input type="date" name="start-date" required>
+                <button type="submit" class="btn btn-primary">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 GlobeTrails Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>

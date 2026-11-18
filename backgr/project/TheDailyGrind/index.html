@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar" id="home" >
+    <div class="container head-inner">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M17 11.6V15a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-3.4a.6.6 0 0 1 .6-.6h12.8a.6.6 0 0 1 .6.6M12 9c0-1 .714-2 2.143-2v0A2.857 2.857 0 0 0 17 4.143V3.5M8 9v-.5a3 3 0 0 1 3-3v0a2 2 0 0 0 2-2V3"/><path d="M16 11h2.5a2.5 2.5 0 0 1 0 5H17"/></g></svg> 
+            </div>
+
+            <div class="logo-text">
+                <h3>The Daily Grind</h3>
+                <p>COFFEE SHOP</p>
+            </div>
+        </div> 
+
+        <button type="button" class="toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-controls="info-links" aria-expanded="false">☰</button>
+
+<ul class="nav-links" id="info-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+    <main id="main" class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <p>good coffee. great vibes.</p>
+                <h2>More Than Just <br> Coffee</h2>
+                <h4>Fresh coffe, cozy atmosphere <br> and moments that mater.</h4>
+            <a href="#menu" class="btn-explore">Explore Our Menu</a>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <section class="characters" id="about">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14" fill="none" stroke="currentColor"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.536 10.536c-2.539 2.538-6.18 3.013-8.132 1.06C.45 9.643.926 6.003 3.464 3.464s6.18-3.013 8.132-1.06c1.953 1.952 1.478 5.593-1.06 8.131"/><path d="M11.596 2.404s-.353 2.475-1.768 3.889c-1.414 1.414-4.242 0-5.656 1.414c-1.415 1.414-1.768 3.89-1.768 3.89"/></g></svg>
+            <h4>Premium Beans</h4>
+            <p>Only the best, carefully <br> selected beans.</p>
+        </div>
+
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M768 192a192 192 0 1 1-8 383.808A256.13 256.13 0 0 1 512 768H320A256 256 0 0 1 64 512V160a32 32 0 0 1 32-32h640a32 32 0 0 1 32 32zm0 64v256a128 128 0 1 0 0-256M96 832h640a32 32 0 1 1 0 64H96a32 32 0 1 1 0-64m32-640v320a192 192 0_0_0_192_192h192a192_192_0_0_0_192-192V19₂z"/></svg>
+            <h4>Freshly Brewed</h4>
+            <p>Enjoy the freshest coffee, <br> every day.</p>
+        </div>
+
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 21c.5-4.5 2.5-8 7-10"/><path d="M9 18c6.218 0 10.5-3.288 11-12V4h-4.014c-9 0-11.986 4-12 9c0 1 0 3 2 5z"/></g></svg>             
+            <h4>Cozy Atmosphere</h4>
+            <p>A perfect place to relax, <br> work or meet.</p>
+        </div>
+
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+            <h4>Local & Friendly</h4>
+            <p>Supportin local, serving<br> with a smile.</p>
+        </div>
+
+</section>
+
+
+
+<section class="drinks" id="menu">
+
+    <div class="item">
+        <div class="fav">
+            <h6>OUR FAVORITES</h6>
+            <h1>Signature Drinks</h1>
+            <p>From classic espressos to creamy lates,<br> find your perfect cup.</p>
+            <a href="#menu" class="menu-btn" onclick="ViewFullMenu(event)">View Full Menu</a>
+        </div>
+
+        <div class="drinks-item">
+            <img src="https://img.freepik.com/premium-photo/cup-espresso-with-steam-coming-out-it_81048-26464.jpg" alt="Espresso">
+            <h5>Espresso</h5>
+            <p>$3.50</p>
+        </div>
+
+    </div>
+
+    <div class="more-drinks" id="more-drinks">
+        <div class="drinks-item">
+            <img src="https://img.freepik.com/premium-photo/photo-steaming-latte-with-creamy-froth_1207718-104126.jpg?w=996" alt="Latte">
+            <h5>Latte</h5>
+            <p>$4.00</p>
+        </div>
+
+        <div class="drinks-item">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.UGpIKgU98F5SIPCrAOB83AHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Iced Coffee">
+            <h5>Iced Coffee</h5>
+            <p>$3.00</p>
+        </div>
+
+        <div class="drinks-item">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Rtpk0_YCOmT7VNqtUS0ZEgHaEJ?r=0&w=1060&h=594&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cappuccino">
+            <h5>Cappuccino</h5>
+            <p>$4.50</p>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<section class="about-us" id="about">
+
+    <div class="about-text">
+        <span>Our Story</span>
+        <h2>About Our Coffee Shop</h2>
+        <p>
+            We believe every cup of coffee tells a story.
+            Our passion is bringing people together through
+            quality coffee, fresh ingredients and a cozy atmosphere.
+        </p>
+
+        <div class="more-text" id="about-more">
+            <p>
+            From carefully selected beans to expertly
+            crafted drinks, every detail matters.
+            We're more than just a coffee shop,
+            we're a place where good people,great coffee
+            and meaninful moments come together.
+            </p>
+        </div>
+
+        <button id="readMore" onclick="readMore()" aria-expanded="false" aria-controls="about-more">Read More</button>
+
+    </div>
+
+    <div class="about-image">
+        <img src="https://img.freepik.com/premium-photo/barista-making-coffee-with-espresso-machine_604472-8229.jpg" alt="A skilled barista operates an espresso machine at a bustling café counter.">
+    </div>
+
+</section>
+
+
+<section class="info" id="contact">
+
+        <div class="info-logo">
+            <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M17 11.6V15a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-3.4a.6.6 0 0 1 .6-.6h12.8a.6.6 0 0 1 .6.6M12 9c0-1 .714-2 2.143-2v0A2.857 2.857 0 0 0 17 4.143V3.5M8 9v-.5a3 3 0 0 1 3-3v0a2 2 0 0 0 2-2V3"/><path d="M16 11h2.5a2.5 2.5 0 0 1 0 5H17"/></g></svg> 
+            </div>
+
+            <div class="logo-text">
+                <h3>The Daily Grind</h3>
+                <p>COFFEE SHOP</p>
+            </div>
+        </div> 
+
+    <div class="info-links">
+        <ul>
+            <h4>Quick Links</h4>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="contacts" id="contact">
+        <h4>Contact Us</h4>
+
+            <div class="contact-item">
+               <i class="bi bi-geo-alt">  123 Coffee Street, Brew City</i>
+            </div>
+
+            <div class="contact-item">
+               <i class="bi bi-telephone">  123-456-7890</i>
+            </div>
+
+            <div class="contact-item">
+                <i class="bi bi-envelope">  info@thedailygrind.com</i>
+            </div>
+
+    </div>
+
+    <div class="info-media">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.tiktok.com/"><i class="bi bi-tiktok"></i></a>
+    </div>
+
+
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-item">
+        <p>&copy; 2024 The Daily Grind. All rights reserved.</p>
+        <p>Good Coffee. Better Days.</p>
+    </div>
+</footer>
+
+
+<script src="js/style.js"></script>
+</body>
+</html>

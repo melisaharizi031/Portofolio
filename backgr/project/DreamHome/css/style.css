@@ -1,0 +1,562 @@
+:root{
+    --first-color:rgb(0, 0, 58);
+    --second-color:rgb(238, 199, 25);
+    --third-color:rgb(255, 255, 255);
+    --fourth-color:rgb(0, 0, 0);
+    --fifth-color:rgba(11, 11, 248, 0.142);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.home {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: 0;
+    padding: 0;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://prd-mls-photos.fastly.propertybase.com/logic_mls/properties/photos/1652877432106588.jpg?auto=format");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.head-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+.logo{
+    display:flex;
+}
+
+.logo-icon img{
+    width: 140px;
+}
+
+.logo-text{
+    font-family:italic;
+    color: var(--third-color);
+    position: relative;
+    bottom: 10px;
+}
+
+.logo-text h3{
+    font-size: 2.5rem;
+}
+
+.logo-text p{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    bottom: 40px;
+}
+
+.head-inner .nav-links {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    gap: 60px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.slogan {
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    transform: translate(-40%, -17%);
+    color: var(--third-color);
+}
+
+.slogan-inner h5 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: 30px;
+
+}
+
+.slogan-inner h1 {
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: italic;
+}
+
+.slogan-inner p{
+    font-size:18px;
+    position: relative;
+    bottom: 40px;
+}
+
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    padding: 64px 24px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.service-item svg{
+    width:50px;
+    height: 50px;
+}
+
+.service-item h5{
+    font-size:20px;
+    font-family: italic;
+    position: relative;
+    top: 9px;
+}
+
+.service-item p{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    bottom: 26px;
+}
+
+.service-item__icon{
+    display: block;
+}
+.properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    justify-content: center;
+    gap: 24px;
+    padding: 64px 24px;
+}
+
+.properties__note {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #555;
+    text-align: center;
+}
+
+.property-item {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--third-color);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+}
+
+.property-carousel {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.property-carousel__slide,
+.property-carousel__slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.property-carousel__slide img {
+    display: block;
+    object-fit: cover;
+}
+
+.property-carousel__arrow {
+    position: absolute;
+    top: 50%;
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    transform: translateY(-50%);
+    border: 0;
+    border-radius: 50%;
+    background: rgb(0 0 0 / 55%);
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+.property-carousel__arrow:hover,
+.property-carousel__arrow:focus-visible {
+    background: var(--first-color);
+}
+
+.property-carousel__arrow--previous {
+    left: 16px;
+}
+
+.property-carousel__arrow--next {
+    right: 16px;
+}
+
+.property-carousel__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.property-carousel__indicators button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 65%);
+    cursor: pointer;
+}
+
+.property-carousel__indicators button.is-active {
+    background: var(--second-color);
+}
+
+.property-item h5,
+.property-item p {
+    margin: 16px 20px;
+}
+
+.property-item .property-item__price {
+    margin-top: 0;
+    color: var(--first-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 48px;
+    padding: 80px max(24px, calc((100% - 1200px) / 2));
+}
+
+.about-us__content h2 {
+    margin-top: 0;
+    color: var(--first-color);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-us__content p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about-us__image img {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    max-height: 440px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.info {
+    background-color: var(--first-color);
+    color: var(--third-color);
+}
+
+.info-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: start;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.info-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-logo .logo-icon img {
+    display: block;
+    width: 80px;
+}
+
+.info-inner .logo-text {
+    position: static;
+    bottom: auto;
+    color: var(--third-color);
+}
+
+.info-inner .logo-text h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.info-inner .logo-text p {
+    position: static;
+    margin: 4px 0 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.info h4 {
+    margin: 0 0 16px;
+    font-size: 1.1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.contact-item svg {
+    flex: 0 0 18px;
+    width: 18px;
+    color: var(--second-color);
+}
+
+.info a {
+    color: inherit;
+    font-size: 1rem;
+}
+
+.info a:hover,
+.info a:focus-visible {
+    color: var(--second-color);
+}
+
+.info-media a {
+    display: inline-grid;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    place-items: center;
+    border: 1px solid rgb(255 255 255 / 35%);
+    border-radius: 50%;
+}
+
+.info-media a svg {
+    color: var(--second-color);
+}
+
+.info-bottom {
+    border-top: 1px solid rgb(255 255 255 / 18%);
+    padding: 16px 24px;
+    color: rgb(255 255 255 / 75%);
+    text-align: center;
+}
+
+.info-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+
+    .home{
+        width: 100%;
+        height: 500px;
+    }
+
+    .head-inner {
+        z-index: 2;
+    }
+
+    .home::before{
+        width: 100%;
+        height: 500px;
+    }
+
+    .logo-icon img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-text{
+        position: relative;
+        top:10px;
+    }
+    .logo-text h3{
+        font-size: 25px;
+    }
+
+    .logo-text p{
+        font-size: 15px;
+        position: absolute;
+        top: 33px;
+    }
+    .head-inner .nav-links {
+        display: none;
+        top: 76px;
+        right: 24px;
+        left: auto;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 180px;
+        margin: 0;
+        padding: 20px 24px;
+        border-radius: 12px;
+        background: var(--first-color);
+        box-shadow: 0 8px 24px rgb(0 0 0 / 25%);
+        z-index: 3;
+    }
+
+    .head-inner .nav-links.is-open {
+        display: flex;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        z-index: 4;
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        border: 1px solid rgb(255 255 255 / 55%);
+        border-radius: 8px;
+        background: var(--first-color);
+        color: var(--third-color);
+    }
+
+
+    /* Slogan */
+
+
+    .slogan{
+        position: absolute;
+        top: 9%;
+        left: 5%;
+        transform: translate(5%, 9%);
+        z-index: 1;
+    }
+
+    .slogan-inner h5{
+        font-size: 12px;
+        text-shadow:4px 4px 6px black;
+
+    }
+
+    .slogan-inner h1{
+        font-size: 55px;
+        text-shadow: 4px 5px 5px black;
+    }
+
+    .slogan-inner p{
+        font-size: 15px;
+        text-shadow: 4px 3px 5px black;
+    }
+
+
+    /*Services*/
+
+    .services{
+        padding: 20px;
+        position: relative;
+        bottom: 110px;
+        height: 60px;
+    }
+
+    .service-item{
+        display: inline;
+    }
+
+    .service-item svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .service-item h5{
+        font-size: 14px;
+        position: relative;
+        top: 0;
+    }
+
+    .service-item p{
+        font-size: 12px;
+    }
+
+
+    .properties{
+        padding: 20px;
+    }
+
+    /* about us */
+
+    
+    .about-us {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 56px 24px;
+    }
+
+    .about-us__image {
+        grid-row: 1;
+    }
+
+    .about-us__image img {
+        min-height: 240px;
+    }
+
+    .info-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 24px;
+    }
+}
